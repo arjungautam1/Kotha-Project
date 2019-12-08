@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!---Req meta Tags--->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<title>KOTHA</title>
+  <script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+    document.getElementById('rec').style.marginLeft = '120px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+    document.getElementById('rec').style.marginLeft = '0';
+  }
+</script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+    .container
+    {
+    margin: 93px 420px 0px 570px;
+    float: left;
+    }
+    .btn-color
+    {
+   color:#fff;
+   background-color: #5f2c7e;
+    }
+    .btn-color:hover
+    {
+     color: green;
+    } 
+    .form-control:focus
+    {
+   border: 1px solid #c39cdb;
+   box-shadow: 0 0 0 0.22rem #5f2c7e;
+     }
+    .card
+   {
+    color: #5f2c7e;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 650px;
+    height: 100%;
+    font-size: 15px;
+   }
+   .card .card-body
+   {
+    padding-top: 0;
+   }
+  .sidebar ul li ul li
+    {
+      display: none;
+    }
+    .sidebar ul li:hover ul li
+    {
+      display: block;
+      padding-left: 20px;
+    }
+	</style>
+  <script type="text/javascript">
+   function abc() {
+    var district = document.getElementById("district");
+    var selectedValue = district.options[district.selectedIndex].value;
+    document.getElementById('detloc').innerHTML='Detailed Location of '+ selectedValue;
+   }
+  </script>
+</head>
+<body>
+	<div id="content">
+    <div id="top">
+       <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+    <p class="head3">Create Ads</p>
+  <div class="wrap"> 
+     
+   </div>
+  </div>
+     </div>
+    <div id="menu" class="sidebar">
+      <div id="k3">
+      <h2><span id="k">K</span>OTHA</h2>
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      </div>
+      <br>
+      <ul>
+      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="YourAds.html"><i class="fas fa-user-plus"></i> Your Ads</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Settings</a>
+                <ul>
+                  <li>
+                    <a href="cpassword.html"><i class="fas fa-key"></i>Change Password</a>
+                  </li>
+                </ul>
+        </li>
+        <li id="lg"><a href="frontpage.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>    
+    </ul>
+    </div>
+    <div class="card">       
+          <div class="card-body" style="background-color: white"> 
+      <h2 style="font-family: 'Exo 2', sans-serif; padding-top: 20px;">Create Your Ad</h2><br>
+      <form method="GET">
+        <label for="loc">Select Location of Kotha</label>
+        <select class="form-control" id="district" name="district" onchange="abc();">
+        <option value="Taplejung" >Taplejung</option>
+        <option value="Panchthar">Panchthar</option>
+        <option value="Illam">Illam</option>
+        <option>Default select</option>
+        <option>Default select</option>
+        <option>Default select</option>
+        <option>Default select</option>
+        <option>Default select</option>
+      </select>
+      <br>
+      <div class="form-group">
+      <label for="detailedLoc" id="detloc">Detailed Location of Taplejung</label>
+        <input type="text" class="form-control" placeholder="Enter the detailed Location">
+      </div>
+      <div class="form-group">
+          <label for="rooms">No of Rooms</label>
+          <input type="number" class="form-control" placeholder="Enter No of Rooms">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" placeholder="Enter the price of Kotha">
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Information</label>
+          <input type="text" class="form-control" placeholder="Enter your contact information">
+        </div>
+        <div class="form-group">
+          <label for="desc">Description</label>
+          <textarea class="form-control" maxlength="255" placeholder="Describe the Kotha"></textarea>
+        </div>
+         <div class="form-group">
+          <label for="picture">Upload a photo of Kotha</label>
+          <input type="file" class="form-control-file">
+        </div>
+        <button type="submit" class="btn btn-color">Submit</button>
+      </form>
+          </div>
+    </div>    
+	
+
+
+<!---Script src--->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!---End of Script--->	
+</body>
+</html>

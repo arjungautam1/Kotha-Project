@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---Req meta Tags--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>KOTHA</title>
+    <script>
+    function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+    document.getElementById('rec').style.marginLeft = '120px';
+    }
+    function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+    document.getElementById('rec').style.marginLeft = '0';
+  }
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+      .wrap
+    {
+      position: absolute;
+      width: 70%;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+    }
+    .wrap #F
+    {
+      text-align: center;
+      font-size: 50px;
+    }
+    #searching
+    {
+      width: 100%;
+      position: relative;
+    }
+    .searchhere
+    {
+      border-radius: 25px 0px 0px 25px;
+      float: left;
+      width: 70%;
+      border: 3px solid white;      
+      padding: 11px;
+    }
+    .searchbtn
+    {
+      color: white;
+      position: absolute;
+      width: 50px;
+      height: 51px;
+      border: 2px solid #ffffff; 
+      background-color: #5f2c7e; 
+      cursor: pointer;
+      border-radius: 0px 25px 25px 0px;
+    }
+    .wrap #searching .searchbtn .fas
+    {
+      color: white;
+    }
+    .wrap #searching .searchbtn:hover
+    {
+      background-color: #c9afe7; 
+    }
+    .recommended
+    {
+      position: absolute;
+      top: 18%;
+      left: 12%;
+      width: 1170px;
+      height: 450px;
+      border-radius: 15px;
+      background-color: white; 
+      border: 2px solid white;
+    }
+    .recommended p
+    {
+      text-align: center;
+      padding-top: 6px;
+      padding-left: 6px;
+      font-size: 20px;
+      color: #5f2c7e;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+    <div id="top">
+       <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+  <div class="wrap"> 
+   <div id="searching">
+    <div>
+      <input type="text" class="searchhere" placeholder="Search Location For Room">
+      <a href="search.html"><button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+      </a>
+    </div>    
+   </div>
+  </div>
+     </div>
+    <div id="menu" class="sidebar">
+      <div id="k3">
+      <h2><span id="k">K</span>OTHA</h2>
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      </div>
+      <br>
+      <ul>
+      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="YourAds.html"><i class="fas fa-user-plus"></i> Your Ads</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Settings</a>
+                <ul>
+                  <li>
+                    <a href="cpassword.html"><i class="fas fa-key"></i>Change Password</a>
+                  </li>
+                </ul>
+        </li>
+        <li id="lg"><a href="frontpage.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>    
+    </ul>
+    </div>
+    <div id="rec" class="recommended">
+        <p style="color: #5d112e;">Searched Result</p><hr style="background-color:#5d112e;">
+       
+    </div>
+
+
+<!---Script src--->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!---End of Script--->  
+</body>
+</html>
